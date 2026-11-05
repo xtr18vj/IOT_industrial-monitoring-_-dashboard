@@ -56,7 +56,7 @@ Current software phase:
 ```text
 industrial-iot-monitoring/
 │
-├── app.py                 # Streamlit UI and orchestration
+├── streamlit_app.py       # Streamlit UI and orchestration
 ├── sensor_simulator.py    # Realistic sensor data generator
 ├── health_engine.py       # Health scoring + anomaly logic
 ├── alert_manager.py       # Alert deduplication and history
@@ -84,7 +84,7 @@ industrial-iot-monitoring/
   - Prevents duplicate alert spam with state transition + cooldown logic
   - Stores alert history table
 
-- **app.py**
+- **streamlit_app.py**
   - Dashboard UI, controls, KPI cards, charts, tables, CSV export
   - Session state management for continuous in-session history
 
@@ -168,7 +168,7 @@ pip install -r requirements.txt
 ## 9) Run the Dashboard
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 Then open the local URL shown in terminal (usually `http://localhost:8501`).
