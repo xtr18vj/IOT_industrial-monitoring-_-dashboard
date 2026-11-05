@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Streamlit local state
+.streamlit/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
